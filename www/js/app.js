@@ -32,6 +32,14 @@ hive.config(function($stateProvider, $urlRouterProvider) {
             }
         }
     })
+    .state("unionVillage.callUs", {
+        url: "/callUs",
+        views: {
+            'content@': {
+                templateUrl: 'templates/callUs.html'
+            }
+        }
+    })
     .state("unionVillage.login", {
         url: "/login",
         views: {

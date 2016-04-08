@@ -48,22 +48,38 @@ hive.config(function($stateProvider, $urlRouterProvider) {
             }
         }
     })
-    .state("unionVillage.live", {
-        url: "/live",
-        views: {
-            'content@': {
-                templateUrl: 'templates/live.html'
+    .state("unionVillage.project", {
+            url: "/project",
+            views: {
+                'content@': {
+                    templateUrl: 'templates/project.html'
+                }
             }
-        }
-    })
-    .state("unionVillage.play", {
-        url: "/play",
-        views: {
-            'content@': {
-                templateUrl: 'templates/play.html'
+        })
+        .state("unionVillage.live", {
+            url: "/live",
+            views: {
+                'content@': {
+                    templateUrl: 'templates/live.html'
+                }
             }
-        }
-    })
+        })
+        .state("unionVillage.work", {
+            url: "/work",
+            views: {
+                'content@': {
+                    templateUrl: 'templates/work.html'
+                }
+            }
+        })
+        .state("unionVillage.play", {
+            url: "/play",
+            views: {
+                'content@': {
+                    templateUrl: 'templates/play.html'
+                }
+            }
+        })
     .state("unionVillage.ourCompany", {
         url: "/ourCompany",
         views: {

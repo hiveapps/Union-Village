@@ -64,6 +64,14 @@ hive.config(function($stateProvider, $urlRouterProvider) {
             }
         }
     })
+    .state("unionVillage.photos", {
+        url: "/photos",
+        views: {
+            'content@': {
+                templateUrl: 'templates/photos.html'
+            }
+        }
+    })
     .state("unionVillage.map", {
         url: "/map",
         views: {

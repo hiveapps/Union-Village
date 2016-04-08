@@ -104,6 +104,14 @@ hive.config(function($stateProvider, $urlRouterProvider) {
             }
         }
     })
+    .state("unionVillage.press", {
+        url: "/press",
+        views: {
+            'content@': {
+                templateUrl: 'templates/press.html'
+            }
+        }
+    })
     .state("unionVillage.callUs", {
         url: "/callUs",
         views: {

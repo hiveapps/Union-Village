@@ -3,22 +3,22 @@ var hive = angular.module('unionVillage.controllers', []);
 
 //Totally functioning simple login
 hive.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
-var users = new Firebase("https://threadtemplate.firebaseio.com/");
+var users = new Firebase("https://unionvillage.firebaseio.com/");
   
   //This is going to get and log the user status, this could be copied and/or used for the beginning framework to build
   //a functioning profile page
-  var status = new Firebase("https://threadtemplate.firebaseio.com/");
+  var status = new Firebase("https://unionvillage.firebaseio.com/");
   var authData = status.getAuth();
   
   if (authData) {
     console.log("User " + authData.uid + " is logged in with " + authData.provider);
-    $state.go('hive.thread');
+    $state.go('unionVillage.dashboard');
   } else {
     console.log("User is logged out");
-    $state.go('hive.login');
+    $state.go('unionVillage.login');
   }
   
-  //This is called when a user clicks the 'Sign Up' button
+  /*This is called when a user clicks the 'Sign Up' button
   $scope.register = function(username, password){
     users.createUser({
       email    : username,
@@ -40,7 +40,7 @@ var users = new Firebase("https://threadtemplate.firebaseio.com/");
         $state.go('hive.thread');
       }
     });
-  };
+  };*/
   
   //This is called when a user clicks the 'Login' button
   $scope.login = function(username, password){
@@ -51,7 +51,7 @@ var users = new Firebase("https://threadtemplate.firebaseio.com/");
       if (error) {
         console.log("Login Failed!", error);
       } else {
-        $state.go('hive.thread');
+        $state.go('unionVillage.dashboard');
       }
     });
   };
@@ -62,7 +62,7 @@ var users = new Firebase("https://threadtemplate.firebaseio.com/");
   // here we will just simulate this with an isNewUser boolean
   var isNewUser = true;
   
-  var ref = new Firebase("https://threadtemplate.firebaseio.com/");
+  var ref = new Firebase("https://unionvillage.firebaseio.com/");
   ref.onAuth(function(authData) {
     if (authData && isNewUser) {
       // save the user's profile into the database so we can list users,
@@ -89,7 +89,7 @@ var users = new Firebase("https://threadtemplate.firebaseio.com/");
   //Logout Functionality
   $scope.logout = function() {
     users.unauth();
-    $state.go('hive.login');
+    $state.go('unionVillage.login');
   };
   
 });
@@ -99,10 +99,10 @@ var users = new Firebase("https://threadtemplate.firebaseio.com/");
 //Thread Page Controller
 hive.controller("threadCtrl", function($scope, $firebaseArray, $timeout) {
 
-var ref = new Firebase("https://threadtemplate.firebaseio.com/");
+var ref = new Firebase("https://unionvillage.firebaseio.com/");
 
     // Get Stored Posts
-    var ratesRef = new Firebase('https://threadtemplate.firebaseio.com/posts');
+    var ratesRef = new Firebase('https://unionvillage.firebaseio.com/posts');
   
     ratesRef.on("value", function (snapshot) {
       $timeout(function () {
@@ -113,15 +113,15 @@ var ref = new Firebase("https://threadtemplate.firebaseio.com/");
     
     function update (snapshot) {
       $scope.todos = $firebaseArray(ratesRef);
-    };
+    }//there was a comma here, confirm it'll work without
     
     
     //Submit posts
-    var postsRef = ref.child("posts")
+    var postsRef = ref.child("posts");
     $scope.addItem = function(){
       
         // Create a unique ID
-        var timestamp = new Date().valueOf()
+        var timestamp = new Date().valueOf();
   
         postsRef.push({
           id: timestamp,

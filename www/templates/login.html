@@ -1,4 +1,4 @@
-<body style="background-color: rgba(192, 192, 192, 0.5);" ng-controller="LoginCtrl">
+<body style="background-color: rgba(192, 192, 192, 0.5);">
     
     <div style="width: 100%; height: 100vh;">
       
@@ -12,7 +12,7 @@
 						<h4>Login to view your resident portal</h4>
 						</span>
 						
-						<form role="form" style="width: 90%; padding-left: 5%; margin-top: 5%;">
+						<form role="form" style="width: 90%; padding-left: 5%; margin-top: 5%;" ng-controller="LoginCtrl">
 						
 							<div class="form-group">
 								<label for="usr">Username:</label>
@@ -28,7 +28,9 @@
 								<label><input type="checkbox"> Remember me</label>
 							</div>
 							
-							<button type="submit" class="btn btn-primary" ng-click="login(username, password)">Login</button>
+							<button type="button" class="btn btn-primary" ng-click="login(username, password)"> 
+								Login 
+							</button>
 							<!--<button type="submit" class="btn btn-danger" ng-click="register(username, password)">Sign Up</button>-->
 						</form>
 					

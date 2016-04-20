@@ -143,6 +143,14 @@ hive.config(function($stateProvider, $urlRouterProvider) {
                 templateUrl: 'templates/login.html'
             }
         }
+    })
+    .state("unionVillage.dashboard", {
+        url: "/dashboard",
+        views: {
+            'content@': {
+                templateUrl: 'templates/dashboard.html'
+            }
+        }
     });
     
     $urlRouterProvider.otherwise("/");

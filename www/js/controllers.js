@@ -1,8 +1,8 @@
-var hive = angular.module('unionVillage.controllers', []);
+var unionVillage = angular.module('unionVillage.controllers', []);
 
 
 //Totally functioning simple login
-hive.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
+unionVillage.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
 var users = new Firebase("https://unionvillage.firebaseio.com/");
   
   //This is going to get and log the user status, this could be copied and/or used for the beginning framework to build
@@ -97,7 +97,7 @@ var users = new Firebase("https://unionvillage.firebaseio.com/");
 
 
 //Thread Page Controller
-hive.controller("threadCtrl", function($scope, $firebaseArray, $timeout) {
+unionVillage.controller("threadCtrl", function($scope, $firebaseArray, $timeout) {
 
 var ref = new Firebase("https://unionvillage.firebaseio.com/");
 
@@ -146,4 +146,12 @@ var ref = new Firebase("https://unionvillage.firebaseio.com/");
 
     };
     
+});
+
+//Header Controller
+unionVillage.controller("headerController", function($scope, $location) { 
+    $scope.isActive = function (viewLocation) { 
+        return viewLocation === $location.path();
+    };
+  
 });

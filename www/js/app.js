@@ -140,7 +140,7 @@ hive.config(function($stateProvider, $urlRouterProvider) {
         url: "/login",
         views: {
             'content@': {
-                templateUrl: 'templates/login.html'
+                templateUrl: 'portal-templates/index.html'
             }
         }
     })
@@ -148,7 +148,7 @@ hive.config(function($stateProvider, $urlRouterProvider) {
         url: "/dashboard",
         views: {
             'content@': {
-                templateUrl: 'templates/dashboard.html'
+                templateUrl: 'portal-templates/dashboard.html'
             }
         }
     });

@@ -1,6 +1,6 @@
-var hive = angular.module('unionVillage', ['ui.router', 'unionVillage.controllers', 'unionVillage.services', 'unionVillage.directives', 'firebase']);
+var unionVillage = angular.module('unionVillage', ['ui.router', 'unionVillage.controllers', 'unionVillage.services', 'unionVillage.directives', 'firebase']);
 
-hive.config(function($stateProvider, $urlRouterProvider) {
+unionVillage.config(function($stateProvider, $urlRouterProvider) {
       
   $stateProvider
   
@@ -133,22 +133,6 @@ hive.config(function($stateProvider, $urlRouterProvider) {
         views: {
             'content@': {
                 templateUrl: 'templates/drivingDirections.html'
-            }
-        }
-    })
-    .state("unionVillage.login", {
-        url: "/login",
-        views: {
-            'content@': {
-                templateUrl: 'portal-templates/index.html'
-            }
-        }
-    })
-    .state("unionVillage.dashboard", {
-        url: "/dashboard",
-        views: {
-            'content@': {
-                templateUrl: 'portal-templates/dashboard.html'
             }
         }
     });

@@ -39,12 +39,12 @@
 				<li ng-class="{ active: isActive('/wellnessVillage')}"><a ui-sref='unionVillage.wellnessVillage'>Wellness Village</a></li>
 				<li ng-class="{ active: isActive('/location')}"><a ui-sref='unionVillage.location'>Location</a></li>
 				<li ng-class="{ active: isActive('/leaseInfo')}"><a ui-sref='unionVillage.leaseInfo'>Leasing Info</a></li>
-				<li ng-class="{ active: isActive('/project') || isActive('/live') || isActive('/work') || isActive('/play')}"><a ui-sref='unionVillage.project'>Live, Work, Play</a></li>
+				<li ng-class="{ active: isActive('/project')}"><a ui-sref='unionVillage.project'>Live, Work, Play</a></li>
 				<li ng-class="{ active: isActive('/ourCompany')}"><a ui-sref='unionVillage.ourCompany'>Our Company</a></li>
 				<li ng-class="{ active: isActive('/photos')}"><a ui-sref='unionVillage.photos'>Photos</a></li>
 				<li ng-class="{ active: isActive('/map')}"><a ui-sref="unionVillage.map">Site Plan</a></li>
 				<li ng-class="{ active: isActive('/press')}"><a ui-sref='unionVillage.press'>Press</a></li>
-				<li ng-class="{ active: isActive('/callUs') || isActive('/drivingDirections')}" class="dropdown">
+				<li ng-class="{ active: isActive('/callUs')}" class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" ui-sref="#">Contact Us
 				<span class="caret"></span></a>
 				<ul class="dropdown-menu">
@@ -53,7 +53,7 @@
 					<li><a href="mailto:info@unionvillage.net">Email Us</a></li> 
 				</ul>
 				</li>
-				<li><a ng-href='http://portal.unionvillage.net' target="_blank">Login</a></li>
+				<li ng-class="{ active: isActive('/login')}"><a ui-sref='unionVillage.login'>Login</a></li>
 			</ul>
 		</div>
 	</div>

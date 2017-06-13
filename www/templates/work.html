@@ -1,0 +1,414 @@
+<body ng-app="unionVillage">
+
+	<!-- Beginning of Main Body Contents -->
+	<div class="work-page-wrapper" style="height: 100vh; width: 100%;">
+		
+		<div class="row top-rows">
+			<h1 style="display: inline;">Work.</h1>
+			<h4 style="display: inline; margin-left: 2%;">Click on an image to direct link to Human Resources!</h4>
+		</div>
+		
+		<div class="row top-rows">
+			<!-- Henderson Hospital Column -->
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="inner-wrapper">
+				<a ui-sref="#" data-toggle="modal" data-target="#vhsHendersonHospitalModal">
+					<img src="img/vhs henderson hospital.png" alt="Henderson Hospital at Union Village" />
+					<div id="overlay_text"><span style="margin-left: 5px;">Valley Health Systems Henderson Hospital</span></div>
+				</a>
+				</div>
+				
+				<!-- VHS Hospital Modal -->
+				<div id="vhsHendersonHospitalModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+					
+						<!-- Modal content-->
+						<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Valley Health Systems Henderson Hospital</h4>
+						</div>
+						<div class="modal-body" style="text-align: center;">
+							<!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+							<h4>To learn more about working at the Valley Health Systems - Henderson Hospital fill out the form below with your contact information, cover letter, and attached resume</h4>
+							
+							<form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
+                    
+								<label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
+								<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
+								
+								<label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
+								<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
+								
+								<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
+								<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+								
+								<label for="message" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Cover Letter:</label>
+								<textarea class="form-control" ng-model="message" name="message" rows="5" id="message" style="width: 75%; resize: none;" required></textarea><br>
+								
+								<label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
+								<select class="form-control" id="facility" name="facility" style="width: 75%;" required>
+									<option value="Valley Health Systems Henderson Hospital" selected>Valley Health Systems - Henderson Hospital</option>
+								</select><br>
+								
+								<label for="uploaded_file"><span style="color: #ff0000">*</span>File input</label>
+								<input type="file" class="form-control-file" id="uploaded_file" name="uploaded_file" required>
+								<small class="text-muted">Please attach your resume here</small><br>
+								
+								<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+							</form>
+						</div>
+						<!-- End of Modal Content -->
+						
+						<!-- Modal Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+						<!-- End of Modal Footer -->
+						
+						</div>
+					</div>
+				</div>
+				<!-- End of VHS Hospital Modal -->
+			</div>
+			
+			
+			<!-- LVAC Column -->
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="inner-wrapper">
+					<a ui-sref="#" data-toggle="modal" data-target="#LVACModal">
+						<img src="img/lvac fitness center.png" alt="Las Vegas Athletic Center at Union Village" />
+						<div id="overlay_text"><span style="margin-left: 5px;">Las Vegas Athletic Club Fitness Center</span></div>
+					</a>
+				</div>
+				
+				<!-- Las Vegas Athletic Club Fitness Center Modal -->
+				<div id="LVACModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+					
+						<!-- Modal content-->
+						<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Las Vegas Athletic Club Fitness Center</h4>
+						</div>
+						<div class="modal-body" style="text-align: center;">
+							<!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+							<h4>To learn more about working at the Las Vegas Athletic Club Fitness Center fill out the form below with your contact information, cover letter, and attached resume</h4>
+							
+							<form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
+                    
+								<label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
+								<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
+								
+								<label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
+								<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
+								
+								<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
+								<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+								
+								<label for="message" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Cover Letter:</label>
+								<textarea class="form-control" ng-model="message" name="message" rows="5" id="message" style="width: 75%; resize: none;" required></textarea><br>
+								
+								<label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
+								<select class="form-control" id="facility" name="facility" style="width: 75%;" required>
+									<option value="Las Vegas Athletic Club Fitness Center" selected>Las Vegas Athletic Club Fitness Center</option>
+								</select><br>
+								
+								<label for="uploaded_file"><span style="color: #ff0000">*</span>File input</label>
+								<input type="file" class="form-control-file" id="uploaded_file" name="uploaded_file" required>
+								<small class="text-muted">Please attach your resume here</small><br>
+								
+								<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+							</form>
+						</div>
+						<!-- End of Modal Content -->
+						
+						<!-- Modal Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+						<!-- End of Modal Footer -->
+						
+						</div>
+					</div>
+				</div>
+				<!-- End of Las Vegas Athletic Club Fitness Center Modal -->
+			</div>
+			
+			
+			<!-- Kindred Health Column -->
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="inner-wrapper">
+					<a ui-sref="#" data-toggle="modal" data-target="#kindredHealthCareLTACModal">
+						<img src="img/kindred healthcare.png" alt="Kindred Healthcare Long Term Accute Care Hospital & Skilled Nursing at Union Village" />
+						<div id="overlay_text"><span style="margin-left: 5px;">Kindred HealthCare - Long Term Acute Care Hospital</span></div>
+					</a>
+				</div>
+				
+				<!-- Kindred HealthCare - Long Term Acute Care Hospital Modal -->
+				<div id="kindredHealthCareLTACModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+					
+						<!-- Modal content-->
+						<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Kindred HealthCare - Long Term Acute Care Hospital</h4>
+						</div>
+						<div class="modal-body" style="text-align: center;">
+							<!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+							<h4>To learn more about working at the Kindred HealthCare - Long Term Acute Care Hospital fill out the form below with your contact information, cover letter, and attached resume</h4>
+							
+							<form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
+                    
+								<label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
+								<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
+								
+								<label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
+								<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
+								
+								<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
+								<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+								
+								<label for="message" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Cover Letter:</label>
+								<textarea class="form-control" ng-model="message" name="message" rows="5" id="message" style="width: 75%; resize: none;" required></textarea><br>
+								
+								<label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
+								<select class="form-control" id="facility" name="facility" style="width: 75%;" required>
+									<option value="Kindred HealthCare - Long Term Acute Care Hospital" selected>Kindred HealthCare - Long Term Acute Care Hospital</option>
+								</select><br>
+								
+								<label for="uploaded_file"><span style="color: #ff0000">*</span>File input</label>
+								<input type="file" class="form-control-file" id="uploaded_file" name="uploaded_file" required>
+								<small class="text-muted">Please attach your resume here</small><br>
+								
+								<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+							</form>
+						</div>
+						<!-- End of Modal Content -->
+						
+						<!-- Modal Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+						<!-- End of Modal Footer -->
+						
+						</div>
+					</div>
+				</div>
+				<!-- End of Kindred HealthCare - Long Term Acute Care Hospital Modal -->
+			</div>
+
+		
+			<!-- Assisted Living Column -->
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="inner-wrapper">
+					<a ui-sref="#" data-toggle="modal" data-target="#wolffApartmentCommunitiesModal">
+						<img src="img/wolff apartment communities.png" alt="Wolff Apartment Communities at Union Village" />
+						<div id="overlay_text"><span style="margin-left: 5px;">Wolff Apartment Communities</span></div>
+					</a>
+				</div>
+				
+				<!-- Wolff Apartment Communities Modal -->
+				<div id="wolffApartmentCommunitiesModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+					
+						<!-- Modal content-->
+						<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Wolff Apartment Communities</h4>
+						</div>
+						<div class="modal-body" style="text-align: center;">
+							<!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+							<h4>To learn more about working at the Wolff Apartment Communities fill out the form below with your contact information, cover letter, and attached resume</h4>
+							
+							<form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
+                    
+								<label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
+								<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
+								
+								<label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
+								<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
+								
+								<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
+								<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+								
+								<label for="message" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Cover Letter:</label>
+								<textarea class="form-control" ng-model="message" name="message" rows="5" id="message" style="width: 75%; resize: none;" required></textarea><br>
+								
+								<label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
+								<select class="form-control" id="facility" name="facility" style="width: 75%;" required>
+									<option value="Wolff Apartment Communities" selected>Wolff Apartment Communities</option>
+								</select><br>
+								
+								<label for="uploaded_file"><span style="color: #ff0000">*</span>File input</label>
+								<input type="file" class="form-control-file" id="uploaded_file" name="uploaded_file" required>
+								<small class="text-muted">Please attach your resume here</small><br>
+								
+								<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+							</form>
+						</div>
+						<!-- End of Modal Content -->
+						
+						<!-- Modal Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+						<!-- End of Modal Footer -->
+						
+						</div>
+					</div>
+				</div>
+				<!-- End of Wolff Apartment Communities Modal -->
+			</div>
+			
+			<!-- Franklin Park Senior Living Column -->
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="inner-wrapper">
+					<a ui-sref="#" data-toggle="modal" data-target="#franklinParkSeniorLivingModal">
+						<img src="img/franklin park senior living.png" alt="Franklin Park Senior Living at Union Village" />
+						<div id="overlay_text"><span style="margin-left: 5px;">Franklin Park Senior Living</span></div>
+					</a>
+				</div>
+				
+				<!-- Franklin Park Senior Living Modal -->
+				<div id="franklinParkSeniorLivingModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+					
+						<!-- Modal content-->
+						<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Franklin Park Senior Living</h4>
+						</div>
+						<div class="modal-body" style="text-align: center;">
+							<!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+							<h4>To learn more about working at the Franklin Park Senior Living fill out the form below with your contact information, cover letter, and attached resume</h4>
+							
+							<form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
+                    
+								<label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
+								<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
+								
+								<label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
+								<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
+								
+								<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
+								<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+								
+								<label for="message" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Cover Letter:</label>
+								<textarea class="form-control" ng-model="message" name="message" rows="5" id="message" style="width: 75%; resize: none;" required></textarea><br>
+								
+								<label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
+								<select class="form-control" id="facility" name="facility" style="width: 75%;" required>
+									<option value="Franklin Park Senior Living" selected>Franklin Park Senior Living</option>
+								</select><br>
+								
+								<label for="uploaded_file"><span style="color: #ff0000">*</span>File input</label>
+								<input type="file" class="form-control-file" id="uploaded_file" name="uploaded_file" required>
+								<small class="text-muted">Please attach your resume here</small><br>
+								
+								<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+							</form>
+						</div>
+						<!-- End of Modal Content -->
+						
+						<!-- Modal Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+						<!-- End of Modal Footer -->
+						
+						</div>
+					</div>
+				</div>
+				<!-- End of Franklin Park Senior Living Modal -->
+			</div>
+			
+			
+			<!-- Power Aging Center - All Things Wellness Column -->
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="inner-wrapper">
+					<a ui-sref="#" data-toggle="modal" data-target="#powerAgingCenterModal">
+						<img src="img/power aging center.png" alt="Power Aging Center All Things Wellness at Union Village" />
+						<div id="overlay_text"><span style="margin-left: 5px;">Power Aging Center - All Things Wellness</span></div>
+					</a>
+				</div>
+				
+				<!-- Franklin Park Senior Living Modal -->
+				<div id="powerAgingCenterModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+					
+						<!-- Modal content-->
+						<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Power Aging Center - All Things Wellness</h4>
+						</div>
+						<div class="modal-body" style="text-align: center;">
+							<!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+							<h4>To learn more about working at the Power Aging Center fill out the form below with your contact information, cover letter, and attached resume</h4>
+							
+							<form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
+                    
+								<label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
+								<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
+								
+								<label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
+								<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
+								
+								<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
+								<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+								
+								<label for="message" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Cover Letter:</label>
+								<textarea class="form-control" ng-model="message" name="message" rows="5" id="message" style="width: 75%; resize: none;" required></textarea><br>
+								
+								<label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
+								<select class="form-control" id="facility" name="facility" style="width: 75%;" required>
+									<option value="Power Aging Center" selected>Power Aging Center - All Things Wellness</option>
+								</select><br>
+								
+								<label for="uploaded_file"><span style="color: #ff0000">*</span>File input</label>
+								<input type="file" class="form-control-file" id="uploaded_file" name="uploaded_file" required>
+								<small class="text-muted">Please attach your resume here</small><br>
+								
+								<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+							</form>
+						</div>
+						<!-- End of Modal Content -->
+						
+						<!-- Modal Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+						<!-- End of Modal Footer -->
+						
+						</div>
+					</div>
+				</div>
+				<!-- End of Franklin Park Senior Living Modal -->
+				
+			</div>
+		
+		</div>
+		<!-- End of Row -->
+	
+		
+		<div class="row bottom-row">
+		
+			<div class="col-xs-6 prev-nav-wrapper">
+				<a ui-sref="unionVillage.live"><h2 style="display: inline;"><span style="margin-left: 0px; font-size: 24px;" class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="padding-left: 16%;"></span>Live.</h2></a>
+			</div>
+			
+			<div class="col-xs-6 nxt-nav-wrapper">
+				<a ui-sref="unionVillage.play"><h2 style="display: inline;">Play.<span style="margin-left: 0px; font-size: 24px;" class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="padding-left: 16%;"></span></h2></a>
+			</div>
+		
+		</div>
+		
+	</div>
+	<!-- End of Main Body Contents -->
+
+</body>

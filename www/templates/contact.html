@@ -1,0 +1,176 @@
+<div class="pgWrapper" ng-controller="contactCtrl">
+    <!-- first row -->
+    <div class="row contactFirstRow">
+        
+        <div class="col-xs-12 mainCol">
+            <img src="img/contactUs.jpeg" class="contactBackgroundImg" />
+            
+            <h1 class="contactMainHeader">Get In Touch</h1>
+            <h3 class="contactSecondaryHeader">We are excited to help you with your questions today.</h3>
+        </div>
+
+    </div>
+
+    <!-- second row -->
+    <div class="row contactSecondRow">
+        <div class="col-xs-offset-3 col-xs-6 offsetColumn">
+            <img src="img/Union Village logo trasparent.png" class="uvLogo" />
+            <!--<h1><span style="color: #2d98c4">{dev</span><span style="color: #000;">Consult}</span></h1>-->
+        </div>
+
+        <div class="col-xs-12 addressColumn">
+            <h1 class="addressHeader">1050 Galleria Dr, Henderson, NV 89011</h1>
+            <h2 class="contactInfoHeader"><span style="color: #9F1C35">t: </span><a href="tel:+1-702-560-5586">+1 (702) 560-5586</a></h2>
+            <h2 class="contactInfoHeader"><span style="color: #9F1C35">e: </span>info@unionvillage.net</h2>
+
+        </div>
+    </div>
+
+    <!-- third row -->
+    <div class="row contactThirdRow" style="height: 50%;">
+        <div class="col-xs-12" style="height: 100%;">
+            <div class='maps' style=" height: 100%;">
+                <iframe src="https://maps.google.com/maps?hl=en&q=1050 W Galleria Dr Henderson, NV 89011&ie=UTF8&t=roadmap&z=10&iwloc=B&output=embed" frameborder="0" style="width: 100%; height: 100%; border: 0;" controls="none"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div class="row contactThirdRow" style="height: 50%;" ng-controller="mapCtrl">
+        <div id="map" style="height: 100%; width: 100%;"></div>
+    </div>-->
+
+    <!-- fourth row -->
+    <div class="row contactFourthRow" style="height: 80%;">
+        <div class="col-xs-12" style="height: 100%; padding: 5%;">
+            <div class="inner contact">
+                <h1 style="color: #2d98c4; margin-bottom: 3%;">Send us a message</h1>
+                <!-- Form Area -->
+                <div class="contact-form">
+                    <!-- Form -->
+                    <form id="contact-us" action="php/info_form_email.php" method="post" enctype="multipart/form-data">
+                        <!-- Left Inputs -->
+                        <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- First Name -->
+                            <input type="text" class="form" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="color: #000;" required/>
+                            
+                            <!-- Last Name -->
+                            <input type="text" class="form" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="color: #000;" required/>
+
+                            <!-- Email -->
+                            <input type="text" class="form" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="color: #000;" required/>
+
+                        </div><!-- End Left Inputs -->
+
+                        <!-- Right Inputs -->
+                        <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <textarea class="form textarea" placeholder="Message" ng-model="message" name="message" rows="5" id="message" style="resize: none;" required></textarea>
+                        </div>
+                        <!-- End Right Inputs -->
+
+                        <!-- Bottom Submit -->
+                        <div class="relative fullwidth col-xs-12">
+                            <!-- Send Button -->
+                            <input class="form-btn semibold" type="submit" name="submit" value="Submit">
+
+                        </div>
+                        <!-- End Bottom Submit -->
+
+
+                    </form>
+
+                    <!-- Your Mail Message -->
+                    <div class="mail-message-area">
+                        <!-- Message -->
+                        <div class="alert gray-bg mail-message not-visible-message">
+                            <strong>Thank You !</strong> Your email has been delivered.
+                        </div>
+                    </div>
+
+                </div><!-- End Contact Form Area -->
+            </div><!-- End Inner -->
+        </div>
+        <!-- end of column -->
+
+    </div>
+    <!-- end of fourth row -->
+
+
+    <!-- fifth row -->
+    <div class="row contactFifthRow">
+        <div class="col-xs-12 wrapperCol">
+            <h1 class="newsletterHeader">Join our newsletter!</h1>
+        </div>
+        <!-- end of column -->
+
+    </div>
+    <!-- end of fifth row -->
+
+
+    <!-- sixth row -->
+    <div class="row contactSixthRow" ng-controller="mailCtrl">
+        <div class="col-xs-12 fullColumn">
+            
+            <div id="mc_embed_signup">
+                 <form action="//developerconsult.us14.list-manage.com/subscribe/post?u=652da35f307c251b286dc7822&amp;id=97886c0a14" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Email Address  
+                                <span class="asterisk">*</span>
+                            </label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="color: #000;">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">First Name </label>
+                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME" style="color: #000;">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-LNAME">Last Name </label>
+                            <input type="text" value="" name="LNAME" class="" id="mce-LNAME" style="color: #000;">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_652da35f307c251b286dc7822_97886c0a14" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color: #9F1C35; color: #fff;"></div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <!-- end of column -->
+    </div>
+    <!-- end of sixth row -->
+
+    <!-- seventh row -->
+    <div class="row contactSeventhRow">
+        <!-- left column -->
+        <div class="col-xs-6 contactBottomLeftCol">
+            <h1 class="bottomColMainHeader" style="color: #b79f7f;">Contact Us</h1>
+
+            <img class="contactBottomLogo" src="img/Union-Village-Logo2.png" />
+            <h4  class="bottomColSecondaryHeader">1050 Galleria Dr, Henderson, NV 89011</h4>
+
+            <br>
+
+            <h4 class="bottomColSecondaryHeader">Tel: <a href="tel:+1-702-560-5586" style="color: #fff;">+1 (702) 560-5586</a></h4>
+            <h4 class="bottomColSecondaryHeader">Email: info@unionvillage.net</h4>
+        </div>
+        
+        <!-- right column -->
+        <div class="col-xs-6 contactBottomRightCol" style="text-align: right; padding-right: 5%;">
+            <h1 class="bottomColMainHeader" style="color: #b79f7f;">Follow Us</h1>
+
+            <ul class="social-list">
+                <li><a href="#" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/8067816?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A8067816%2Cidx%3A2-1-2%2CtarId%3A1480458899545%2Ctas%3Aunion%20village" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- end of seventh row -->
+
+</div>

@@ -1,0 +1,1 @@
+var unionVillage=angular.module("unionVillage.controllers",[]);unionVillage.controller("headerCtrl",function(l,n){l.isActive=function(l){return l===n.path()},$(".navbar-collapse a:not(.dropdown-toggle)").click(function(){$(".navbar-collapse").collapse("hide")})});

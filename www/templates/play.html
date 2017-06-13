@@ -1,0 +1,61 @@
+<body ng-app="unionVillage">
+
+    <!-- Beginning of Main Body Contents -->
+    <div class="play-page-wrapper" style="height: 100vh; width: 100%;">
+      
+      <div class="row top-row">
+        <h1 style="display: inline;">Play.</h1>
+        <h4 style="display: inline; margin-left: 2%;">Click on an image to direct link to our Retail Partners!</h4>
+      </div>
+      
+      <div class="row top-row">
+        <!-- LVAC Fitness Center Column -->
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="inner-wrapper">
+            <a ui-sref="#" data-toggle="modal" data-target="#lvacFitnessCenterModal">
+              <img src="img/lvac fitness center 2.png" alt="Las Vegas Athletic Center at Union Village" />
+              <div id="overlay_text"><span style="margin-left: 5px;">Las Vegas Athletic Club Fitness Center</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- LVAC Fitness Center Modal -->
+        <div id="lvacFitnessCenterModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Las Vegas Athletic Club Fitness Center</h4>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <h2>More Info Coming Soon!</h2>
+                <br><br>
+                <h4>To learn more about LVAC click <a ng-href="http://www.lvac.com" target="_blank">HERE</a></h4>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of LVAC Fitness Center Modal -->
+   
+      </div>
+      <!-- End of LVAC Fitness Center Column and Row -->
+      
+      
+      <div class="row bottom-row">
+        <a ui-sref="unionVillage.work"><h2 style="display: inline;"><span style="margin-left: 0px; font-size: 24px;" class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="padding-left: 16%;"></span>Work.</h2></a>
+      </div>
+      
+    </div>
+    <!-- End of Main Body Contents -->
+  
+</body>

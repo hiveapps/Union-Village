@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="unionVillage">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Home to the Union Village website, here you can learn more about the mission, vision, and values of Union Village." />
+    <!-- the 3 below meta tags allow for a refresh to pull latest files/updates -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+
+    <title>Union Village</title>
+
+    <!-- Your Stylesheet -->
+    <link href="css/site.css" rel="stylesheet" />
+    
+    <!-- Page Icon (for browser tab) -->
+    <link rel="icon" href="img/union_village_tab_icon.png">
+    
+    <!-- Bootstrap stylesheets and links -->
+    <!-- Latest compiled and minified Bootstrap CSS
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    
+    <!-- adding fontawesome -->
+    <script src="https://use.fontawesome.com/599485db10.js"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    
+	  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    
+    <!-- adding MailChimp -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- End of required Bootstrap stylesheets and links -->
+    
+     
+    <!-- Latest AngularJS, had to move file into js folder due to .gitignore file ignoring node_modules folder  -->
+    <script src="js/angular.min.js"></script>
+    <!-- Latest AngularJS UI-Router, had to move file into js folder due to .gitignore file ignoring node_modules folder -->
+    <script src="js/angular-ui-router.min.js"></script>
+    <!-- UI Bootstrap had to move file into js folder due to .gitignore file ignoring node_modules folder -->
+    <script src="js/ui-bootstrap-tpls.js"></script>
+    
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+
+    <!-- second part of MailChimp -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    
+    <!-- Your Apps JS -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/main.js"></script>
+    <!-- End of your Apps JS -->
+    
+  </head>
+  
+  <!-- This is the main App body, notice the ui-view tag which enables us 
+  to use Angular UI-Router -->
+  <body>
+    <header ui-view="header"></header>
+    <main ui-view="content"></main>
+    <footer ui-view="footer"></footer>
+  </body>
+
+</html>

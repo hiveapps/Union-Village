@@ -1,0 +1,48 @@
+<!-- Beginning of Header/Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="headerCtrl">
+	
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" ng-click="navbarCollapsed = !navbarCollapsed">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="navbar-header" style="padding-top: 9px;">
+				<a ui-sref='unionVillage.home' class="pull-left"><img src="img/Union-Village-Logo2.png" style="height: 30px; margin-right: 5px;" /></a>
+			</div>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			<ul class="nav navbar-nav">
+				<li ng-class="{ active: isActive('/')}"><a ui-sref='unionVillage.home' data-toggle="collapse" data-target=".navbar-collapse.in">Home</a></li>
+				<li ng-class="{ active: isActive('/integratedVillage')}"><a ui-sref='unionVillage.integratedVillage' data-toggle="collapse" data-target=".navbar-collapse.in">Integrated Health Village</a></li>
+				<li ng-class="{ active: isActive('/wellnessVillage')}"><a ui-sref='unionVillage.wellnessVillage' data-toggle="collapse" data-target=".navbar-collapse.in">Wellness Village</a></li>
+				<li ng-class="{ active: isActive('/location')}"><a ui-sref='unionVillage.location' data-toggle="collapse" data-target=".navbar-collapse.in">Location</a></li>
+				<li ng-class="{ active: isActive('/leaseInfo')}"><a ui-sref='unionVillage.leaseInfo' data-toggle="collapse" data-target=".navbar-collapse.in">Leasing Info</a></li>
+				<li ng-class="{ active: isActive('/project') || isActive('/live') || isActive('/work') || isActive('/play')}"><a ui-sref='unionVillage.project' data-toggle="collapse" data-target=".navbar-collapse.in">Live, Work, Play</a></li>
+				<li ng-class="{ active: isActive('/ourCompany')}"><a ui-sref='unionVillage.ourCompany' data-toggle="collapse" data-target=".navbar-collapse.in">Our Company</a></li>
+				<li ng-class="{ active: isActive('/photos')}"><a ui-sref='unionVillage.photos' data-toggle="collapse" data-target=".navbar-collapse.in">Photos</a></li>
+				<li ng-class="{ active: isActive('/map')}"><a ui-sref='unionVillage.map' data-toggle="collapse" data-target=".navbar-collapse.in">Site Plan</a></li>
+				<li ng-class="{ active: isActive('/press')}"><a ui-sref='unionVillage.press' data-toggle="collapse" data-target=".navbar-collapse.in">Press</a></li>
+				<li ng-class="{ active: isActive('/contact')}"><a ui-sref='unionVillage.contact' data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
+				<!--<li ng-class="{ active: isActive('/callUs') || isActive('/drivingDirections') || isActive('/email')}">
+					<a class="dropdown-toggle" data-toggle="dropdown" ui-sref="#">Contact Us
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li ng-class="{ active: isActive('/callUs')}"><a ui-sref="unionVillage.callUs">Call Us</a></li>
+						<li ng-class="{ active: isActive('/drivingDirections')}"><a ui-sref="unionVillage.drivingDirections">Driving Directions</a></li>
+						<li ng-class="{ active: isActive('/email')}"><a ui-sref="unionVillage.email">Email Us</a></li> 
+					</ul>
+				</li>-->
+				<li><a ng-href='http://portal.unionvillage.net' target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in">Login</a></li>
+			</ul>
+
+		</div>
+	</div>
+</nav>
+<!-- End of Header/Navbar -->

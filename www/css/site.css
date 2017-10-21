@@ -41,7 +41,7 @@ nav.navbar div.collapse ul li.active a {
 
 nav.navbar div.collapse ul li a {
   color: #fff !important; /* Changes font color of main tabs good grey is: #c4c4c4 */
-  font-size: 12px; /* Changes font size of main tabs */
+  font-size: 14px; /* Changes font size of main tabs */
 }
 
 nav.navbar div.collapse ul ul.dropdown-menu li a {
@@ -128,7 +128,7 @@ div#ourVision .cd-container .visionVerbiage {
 }
 
 
-/* Integrated Health Village Styling */
+/* Integrated Health Village Styling - UNUSED NOW
 .ivWrapper {
 	height: 100vh;
 }
@@ -139,7 +139,7 @@ div#ourVision .cd-container .visionVerbiage {
 
 }
 
-.ivWrapper .carousel .carousel-inner .item .carousel-caption {
+.ivWrapper .carousel .carousel-inner .item .ivcarousel-caption {
 	background-color: rgba(87, 87, 87, 0.8);
 	color: black;
   right: 10%;
@@ -147,14 +147,13 @@ div#ourVision .cd-container .visionVerbiage {
   max-width: 500px;
 	width: 300px;
   left: auto;
-  /*top: auto;*/
   top: 50%;
   transform: translateY(-50%);
   bottom: initial;
 	padding: 2%;
 }
 
-.ivWrapper .carousel .carousel-inner .item .carousel-caption p {
+.ivWrapper .carousel .carousel-inner .item .ivcarousel-caption p {
 	font-size: 24px;
 	color: #fff;
 }
@@ -162,7 +161,7 @@ div#ourVision .cd-container .visionVerbiage {
 
 
 
-/* Wellness Village Styling */
+/* Our Village Styling */
 .wvWrapper {
   height: 100vh;
 }
@@ -204,8 +203,8 @@ div#ourVision .cd-container .visionVerbiage {
 
 
 
-/* Location Page Styling */
-/* Page Loader (Only being used on Location Page) */
+/* Location Page Styling
+/* Page Loader (Only being used on Location Page)
 #page {
   display: none;
   margin-top: 55px;
@@ -224,7 +223,7 @@ div#ourVision .cd-container .visionVerbiage {
   background-position: center;
 }
 
-/* Main Page Row */
+/* Left Column Styling
 section.loc-page-wrapper .row {
   width: 100%;
   padding-top: 3%;
@@ -245,7 +244,7 @@ section.loc-page-wrapper .row div#par-col div.item p {
 }
 
 
-/* Map Column */
+/* Map Column
 section.loc-page-wrapper .row .col-lg-8 {
   margin: 3% auto;
   text-align: center;
@@ -601,14 +600,10 @@ End of Play Page Styling */
   clear: left;
 }
 
-.oc-page-wrapper .animation-element:nth-of-type(4n-2) {}
-
-.oc-page-wrapper .animation-element:nth-of-type(4n-1) {}
-
 .oc-page-wrapper .animation-element:nth-of-type(4n-0) {
   clear: right;
 }
-/*left fancy animastion*/
+/*left fancy animation*/
 
 @-moz-keyframes left_animation {
   0% {
@@ -742,9 +737,6 @@ End of Play Page Styling */
   border-radius: 50%;
   margin-bottom: 10px;
 }
-
-.oc-page-wrapper .gallery:hover .image,
-.oc-page-wrapper .gallery:active .image {}
 
 
 .oc-page-wrapper .gallery .title {

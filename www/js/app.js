@@ -46,6 +46,14 @@ unionVillage.config(function($stateProvider, $urlRouterProvider) {
             }
         }
     })
+    .state("unionVillage.ourVillage", {
+        url: "/ourVillage",
+        views: {
+            'content@': {
+                templateUrl: 'templates/ourVillage.html'
+            }
+        }
+    })
     .state("unionVillage.location", {
         url: "/location",
         views: {

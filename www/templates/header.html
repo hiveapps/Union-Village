@@ -21,11 +21,12 @@
 				<li ng-class="{ active: isActive('/')}"><a ui-sref='unionVillage.home' data-toggle="collapse" data-target=".navbar-collapse.in">Home</a></li>
 				<li ng-class="{ active: isActive('/integratedVillage')}"><a ui-sref='unionVillage.integratedVillage' data-toggle="collapse" data-target=".navbar-collapse.in">Integrated Health Village</a></li>
 				<li ng-class="{ active: isActive('/wellnessVillage')}"><a ui-sref='unionVillage.wellnessVillage' data-toggle="collapse" data-target=".navbar-collapse.in">Wellness Village</a></li>
+				<!--<li ng-class="{ active: isActive('/location')}"><a ui-sref='unionVillage.location' data-toggle="collapse" data-target=".navbar-collapse.in">Location</a></li>-->
 				<li ng-class="{ active: isActive('/leaseInfo')}"><a ui-sref='unionVillage.leaseInfo' data-toggle="collapse" data-target=".navbar-collapse.in">Leasing Info</a></li>
 				<li ng-class="{ active: isActive('/project') || isActive('/live') || isActive('/work') || isActive('/play')}"><a ui-sref='unionVillage.project' data-toggle="collapse" data-target=".navbar-collapse.in">Live, Work, Play</a></li>
 				<li ng-class="{ active: isActive('/ourCompany')}"><a ui-sref='unionVillage.ourCompany' data-toggle="collapse" data-target=".navbar-collapse.in">Our Company</a></li>
 				<li ng-class="{ active: isActive('/photos')}"><a ui-sref='unionVillage.photos' data-toggle="collapse" data-target=".navbar-collapse.in">Photos</a></li>
-				<li ng-class="{ active: isActive('/map')}"><a ui-sref='unionVillage.map' data-toggle="collapse" data-target=".navbar-collapse.in">Site Plan</a></li>
+				<!--<li ng-class="{ active: isActive('/map')}"><a ui-sref='unionVillage.map' data-toggle="collapse" data-target=".navbar-collapse.in">Site Plan</a></li>-->
 				<li ng-class="{ active: isActive('/press')}"><a ui-sref='unionVillage.press' data-toggle="collapse" data-target=".navbar-collapse.in">Press</a></li>
 				<li ng-class="{ active: isActive('/contact')}"><a ui-sref='unionVillage.contact' data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
 				<!--<li ng-class="{ active: isActive('/callUs') || isActive('/drivingDirections') || isActive('/email')}">
@@ -38,9 +39,11 @@
 						<li ng-class="{ active: isActive('/email')}"><a ui-sref="unionVillage.email">Email Us</a></li> 
 					</ul>
 				</li>-->
-				<li><a ng-href='http://portal.unionvillage.net' target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in">Login</a></li>
 			</ul>
-
+			
+			<ul class="nav navbar-nav" style="float: right">
+				<li style="margin-right: 0px;"><a ng-href='http://portal.unionvillage.net' target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in">Login</a></li>
+			</ul>
 		</div>
 	</div>
 </nav>

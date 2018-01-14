@@ -110,7 +110,7 @@ div#ourVision .cd-container .visionVerbiage {
   }
   div#ourVision .cd-container .visionVerbiage {
     font-size: 20px;
-    margin: 0px auto;
+    margin: 10px auto;
     width: 95%;
   }
 }
@@ -279,13 +279,14 @@ section.loc-page-wrapper .row .col-lg-8 {
 }
 
 .li-main-wrapper .row .col-xs-12 .inner-wrapper a div#overlay_text {
-	position: relative;
+  position: relative;
+  padding: 5px;
 	top: 0px;
 	z-index: 3;
-	font-size: 24px;
+	font-size: 21px;
 	width: 100%;
 	background-color: rgba(87, 87, 87, 0.85);
-    cursor: pointer;
+  cursor: pointer;
 }
 /* End of Leasing Info Styling */
 

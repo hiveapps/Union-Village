@@ -206,13 +206,13 @@ Main components
   background-image: url("../img/hhGrandOpening2.jpg");
 }
 .cd-fixed-bg.cd-bg-2 {
-  background-image: url("../img/kindred hp.jpg");
+  background-image: url("../img/franklin park hp 2.jpg");
 }
 .cd-fixed-bg.cd-bg-3 {
-  background-image: url("../img/franklin park hp.jpg");
+  background-image: url("../img/lvac hp.jpg");
 }
 .cd-fixed-bg.cd-bg-4 {
-  background-image: url("../img/franklin park hp 2.jpg");
+  background-image: url("../img/retail hp.jpg");
 }
 @media only screen and (min-width: 768px) {
   .cd-fixed-bg h1, .cd-fixed-bg h2 {

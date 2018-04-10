@@ -1,20 +1,47 @@
 <div class="pgWrapper li-main-wrapper" style="height: 100vh; width: 100%;">
 	<div class="row" style="height: 100%;">
 		<div class="col-md-12">
-          	
-			<!-- Top Tab Bar -->
-			<ul class="nav nav-tabs">
-				<li class="active" style="margin-left: 3%; width: 30%;"><a data-target="#additionalSelection" data-toggle="tab">Live</a></li>
-				<li style="width: 30%;"><a data-target="#additionalSelection2" data-toggle="tab">Work</a></li>
-				<li style="width: 30%;"><a data-target="#additionalSelection3" data-toggle="tab">Play</a></li>
-			</ul>
+
+      <!-- beginning top tab bar -->
+      <ul class="nav nav-tabs" id="projectTab" role="tablist">
+        <li class="nav-item active" style="margin-left: 3%; width: 30%;">
+          <a class="nav-link active" id="live-tab" data-toggle="tab" href="#live" role="tab" aria-controls="live" aria-selected="true">Live</a>
+        </li>
+        <li class="nav-item" style="width: 30%;">
+          <a class="nav-link" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false">Work</a>
+        </li>
+        <li class="nav-item" style="width: 30%;">
+          <a class="nav-link" id="play-tab" data-toggle="tab" href="#play" role="tab" aria-controls="play" aria-selected="false">Play</a>
+        </li>
+      </ul>
+      <!-- end top tab bar -->
+
+      <!-- beginning of tab body contents -->
+      <div class="tab-content" id="projectTabContent">
+        <div class="tab-pane active" id="live" role="tabpanel" aria-labelledby="live-tab" style="padding-top: 3%;">
+          
+        </div>
+        
+        
+        
+        <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab" style="padding-top: 3%;">Work</div>
+        <div class="tab-pane fade" id="play" role="tabpanel" aria-labelledby="play-tab" style="padding-top: 3%;">Play</div>
+      </div>
+      <!-- end of tab body contents -->
+
+		</div>
+  </div>
+</div>
+
+
+      <!--
 			<div class="tab-content">
 				
 				
-				<!-- Tab Selection 1 -->
+				<!-- Tab Selection 1 --
 				<div class="tab-pane active" id="additionalSelection" style="padding-top: 0px;">
 					
-					<!-- Beginning of Main Body Contents -->
+					<!-- Beginning of Main Body Contents --
           <div class="live-main-wrapper" style="height: 100vh; width: 100%;">
             
             <div class="row" style="padding-top: 0px; margin-top: 0px;">
@@ -22,25 +49,25 @@
             </div>
             
             <div class="row" style="margin-top: -25px;">
-              <!-- Independent Senior Living Column -->
+              <!-- Independent Senior Living Column --
               <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="inner-wrapper">
                   <a ui-sref="#" data-toggle="modal" data-target="#wolffApartmentModal">
                     <img src="img/live.png" alt="Live - Union Village" />
-                    <div id="overlay_text"><span style="margin-left: 5px;">Apartment Homes</span></div>
+                    <div id="overlay_text"><span style="margin-left: 5px;">The Well Apartments</span></div>
                   </a>
                 </div>
               </div>
               
-              <!-- Independent Senior Living Modal -->
+              <!-- Independent Senior Living Modal --
               <div id="wolffApartmentModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
               
-                  <!-- Modal content-->
+                  <!-- Modal content--
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Apartment Homes</h4>
+                      <h4 class="modal-title">The Well Apartments</h4>
                     </div>
                     <div class="modal-body">
                       <p>Construction will soon start one of the finest apartment home project in Henderson, 1, 2 and 3 Bedroom Apartment Homes</p>
@@ -56,42 +83,43 @@
                         <li>Attached Garages*</li>
                       </ul>
                     </div>
-                    <!-- End of Modal Content -->
+                    <!-- End of Modal Content --
                     
-                    <!-- Modal Footer -->
+                    <!-- Modal Footer --
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
-                    <!-- End of Modal Footer -->
+                    <!-- End of Modal Footer --
                     
                   </div>
                 </div>
               </div>
-              <!-- End of Independent Senior Living Modal -->
+              <!-- End of Independent Senior Living Modal --
               
               
               
-              <!-- Assisted Living Column -->
+              <!-- Assisted Living Column --
               <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="inner-wrapper">
                   <a ui-sref="#" data-toggle="modal" data-target="#franklinParkModal">
                     <img src="img/franklin park townhomes.png" alt="Franklin Park Townhomes at Union Village" />
-                    <div id="overlay_text"><span style="margin-left: 5px;">Franklin Park Townhomes</span></div>
+                    <div id="overlay_text"><span style="margin-left: 5px;">Emerald Village</span></div>
                   </a>
                 </div>
               </div>
               
-              <!-- Assisted Living Modal -->
+              <!-- Assisted Living Modal --
               <div id="franklinParkModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
               
-                  <!-- Modal content-->
+                  <!-- Modal content--
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Franklin Park Townhomes</h4>
+                      <h4 class="modal-title">Emerald Village</h4>
                     </div>
-                    <div class="modal-body" style="text-align: center;">
+                    <div class="modal-body" style="text-align: center;"> 
+
                       <h3>Fill out the form to request more information</h3>
                       
                       <form action="php/live_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
@@ -119,258 +147,33 @@
                       </form>
                       
                     </div>
-                    <!-- End of Modal Content -->
+                    <!-- End of Modal Content --
                     
-                    <!-- Modal Footer -->
+                    <!-- Modal Footer --
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
-                    <!-- End of Modal Footer -->
+                    <!-- End of Modal Footer --
                     
                   </div>
                 </div>
               </div>
-              
-              <!-- Independent Senior Living Column -->
-              <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div class="inner-wrapper">
-                  <a ui-sref="#" data-toggle="modal" data-target="#wolffSeniorApartmentModal">
-                    <img src="img/wolff senior apartments.png" alt="Senior Apartments at Union Village" />
-                    <div id="overlay_text"><span style="margin-left: 5px;">Senior Apartments</span></div>
-                  </a>
-                </div>
-              </div>
-              
-              <!-- Independent Senior Living Modal -->
-              <div id="wolffSeniorApartmentModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-              
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Senior Apartments</h4>
-                    </div>
-                    <div class="modal-body">
-                      <ol>
-                        <li>Beautiful, vibrant and affordable senior living for those 55+ is coming to Union Village.  The project will be comprised of three-story mid-rise buildings and carriage style homes, some with garages. These brand new spacious 1, 2 and 2 bedrooms with den floor plans will feature quality interior finishes including Energy Star-rated Clean Steel kitchen appliances, granite countertops and in-home washer/dryer option</li>
-                        <li>Community amenities will consist of Wi-Fi care, arts-and-craft room and ability to enjoy free membership in the fitness center and spa at Union Village.</li>
-                        <li>Sign up to receive additional materials and updates.</li>
-                      </ol>
-                    </div>
-                    <!-- End of Modal Content -->
-                    
-                    <!-- Modal Footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                    <!-- End of Modal Footer -->
-                    
-                  </div>
-                </div>
-              </div>
-              <!-- End of Independent Senior Living Modal -->
-
-              
-              <!-- Assisted Living Column -->
-              <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div class="inner-wrapper">
-                  <a ui-sref="#" data-toggle="modal" data-target="#franklinAssistedLivingModal">
-                    <img src="img/franklin park assisted living.png" alt="Franklin Park Assisted Living Townhomes at Union Village" />
-                    <div id="overlay_text"><span style="margin-left: 5px;">Franklin Park Assisted Living Townhomes</span></div>
-                  </a>
-                </div>
-              </div>
-              
-              <!-- Assisted Living Modal -->
-              <div id="franklinAssistedLivingModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-              
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Franklin Park Assisted Living Townhomes</h4>
-                    </div>
-                    <div class="modal-body" style="text-align: center;">
-                      
-                      <h3>Fill out the form to request more information</h3>
-                      
-                      <form action="php/live_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
-                          
-                          <label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
-                          <input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
-                          
-                          <label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
-                          <input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
-                          
-                          <label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
-                          <input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
-                          
-                          <label for="message" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Message:</label>
-                          <textarea class="form-control" ng-model="message" name="message" rows="5" id="message" style="width: 75%; resize: none;" required></textarea><br>
-                          
-                          <label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
-                          <select class="form-control" id="facility" name="facility" style="width: 75%;" required>
-                            <option value="Franklin Park Assisted Living Townhomes" selected>Franklin Park Assisted Living Townhomes</option>
-                          </select><br>
-                          
-                          <input class="btn btn-primary" type="submit" name="submit" value="Submit">
-                      </form>
-                      
-                    </div>
-                    <!-- End of Modal Content -->
-                    
-                    <!-- Modal Footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                    <!-- End of Modal Footer -->
-                    
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Independent Senior Living Column -->
-              <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div class="inner-wrapper">
-                  <a ui-sref="#" data-toggle="modal" data-target="#franklinParkProfessionalModal">
-                    <img src="img/franklin park professional.png" alt="Franklin Park Young Professionsal Apartments at Union Village" />
-                    <div id="overlay_text"><span style="margin-left: 5px;">Franklin Park Young Professional Apartments</span></div>
-                  </a>
-                </div>
-              </div>
-              
-              <!-- Independent Senior Living Modal -->
-              <div id="franklinParkProfessionalModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-              
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Franklin Park Young Professional Apartments</h4>
-                    </div>
-                    <div class="modal-body" style="text-align: center;">
-                      
-                      <h3>Fill out the form to request more information</h3>
-                      
-                      <form action="php/live_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
-                          
-                          <label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
-                          <input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
-                          
-                          <label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
-                          <input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
-                          
-                          <label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
-                          <input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
-                          
-                          <label for="message" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Message:</label>
-                          <textarea class="form-control" ng-model="message" name="message" rows="5" id="message" style="width: 75%; resize: none;" required></textarea><br>
-                          
-                          <label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
-                          <select class="form-control" id="facility" name="facility" style="width: 75%;" required>
-                            <option value="Franklin Park Young Professional Apartments" selected>Franklin Park Young Professional Apartments</option>
-                          </select><br>
-                          
-                          <input class="btn btn-primary" type="submit" name="submit" value="Submit">
-                      </form>
-                      
-                    </div>
-                    <!-- End of Modal Content -->
-                    
-                    <!-- Modal Footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                    <!-- End of Modal Footer -->
-                    
-                  </div>
-                </div>
-              </div>
-              <!-- End of Independent Senior Living Modal -->
-              
-              
-              
-              <!-- Assisted Living Column -->
-              <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div class="inner-wrapper">
-                  <a ui-sref="#" data-toggle="modal" data-target="#franklinParkMemoryModal">
-                    <img src="img/franklin park memory care.png" alt="Franklin Park Memory Cary at Union Village" />
-                    <div id="overlay_text"><span style="margin-left: 5px;">Franklin Park Memory Care</span></div>
-                  </a>
-                </div>
-              </div>
-              
-              <!-- Assisted Living Modal -->
-              <div id="franklinParkMemoryModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-              
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Franklin Park Memory Care</h4>
-                    </div>
-                    <div class="modal-body" style="text-align: center;">
-                      
-                      <h3>Fill out the form to request more information</h3>
-                      
-                      <form action="php/live_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
-                          
-                          <label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
-                          <input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
-                          
-                          <label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
-                          <input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
-                          
-                          <label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
-                          <input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
-                          
-                          <label for="message" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Message:</label>
-                          <textarea class="form-control" ng-model="message" name="message" rows="5" id="message" style="width: 75%; resize: none;" required></textarea><br>
-                          
-                          <label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
-                          <select class="form-control" id="facility" name="facility" style="width: 75%;" required>
-                            <option value="Franklin Park Memory Care" selected>Franklin Park Memory Care</option>
-                          </select><br>
-                          
-                          <input class="btn btn-primary" type="submit" name="submit" value="Submit">
-                      </form>
-                      
-                    </div>
-                    <!-- End of Modal Content -->
-                    
-                    <!-- Modal Footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                    <!-- End of Modal Footer -->
-                    
-                  </div>
-                </div>
-              </div>
-              <!-- End of Assisted Living Modal -->
-        
-            </div>
-            <!-- End of Row -->
 
             
           </div>
-          <!-- End of Main Body Contents -->
+          <!-- End of Main Body Contents --
 					
 				</div>
-				<!-- End of Tab Selection 1 -->
+				<!-- End of Tab Selection 1 --
 				
 
 
 
 				
-				<!-- Tab Selection 2 -->
+				<!-- Tab Selection 2 --
 				<div class="tab-pane" id="additionalSelection2" style="padding-top: 0px;">
 					
-          <!-- Beginning of Main Body Contents -->
+          <!-- Beginning of Main Body Contents --
           <div class="work-page-wrapper" style="height: 100vh; width: 100%;">
             
             <div class="row top-rows" style="margin-top: 0px; padding-top: 0px;">
@@ -378,7 +181,7 @@
             </div>
             
             <div class="row top-rows" style="margin-top: -25px;">
-              <!-- Henderson Hospital Column -->
+              <!-- Henderson Hospital Column --
               <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="inner-wrapper">
                 <a ui-sref="#" data-toggle="modal" data-target="#vhsHendersonHospitalModal">
@@ -387,18 +190,18 @@
                 </a>
                 </div>
                 
-                <!-- VHS Hospital Modal -->
+                <!-- VHS Hospital Modal --
                 <div id="vhsHendersonHospitalModal" class="modal fade" role="dialog">
                   <div class="modal-dialog">
                   
-                    <!-- Modal content-->
+                    <!-- Modal content--
                     <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                       <h4 class="modal-title">Valley Health Systems Henderson Hospital</h4>
                     </div>
                     <div class="modal-body" style="text-align: center;">
-                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>--
                       <h4>To learn more about working at the Valley Health Systems - Henderson Hospital fill out the form below with your contact information, cover letter, and attached resume</h4>
                       
                       <form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
@@ -427,22 +230,22 @@
                         <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                       </form>
                     </div>
-                    <!-- End of Modal Content -->
+                    <!-- End of Modal Content --
                     
-                    <!-- Modal Footer -->
+                    <!-- Modal Footer --
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
-                    <!-- End of Modal Footer -->
+                    <!-- End of Modal Footer --
                     
                     </div>
                   </div>
                 </div>
-                <!-- End of VHS Hospital Modal -->
+                <!-- End of VHS Hospital Modal --
               </div>
               
               
-              <!-- LVAC Column -->
+              <!-- LVAC Column --
               <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="inner-wrapper">
                   <a ui-sref="#" data-toggle="modal" data-target="#LVACModal">
@@ -451,18 +254,18 @@
                   </a>
                 </div>
                 
-                <!-- Las Vegas Athletic Club Fitness Center Modal -->
+                <!-- Las Vegas Athletic Club Fitness Center Modal --
                 <div id="LVACModal" class="modal fade" role="dialog">
                   <div class="modal-dialog">
                   
-                    <!-- Modal content-->
+                    <!-- Modal content--
                     <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                       <h4 class="modal-title">Las Vegas Athletic Club Fitness Center</h4>
                     </div>
                     <div class="modal-body" style="text-align: center;">
-                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>--
                       <h4>To learn more about working at the Las Vegas Athletic Club Fitness Center fill out the form below with your contact information, cover letter, and attached resume</h4>
                       
                       <form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
@@ -491,22 +294,22 @@
                         <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                       </form>
                     </div>
-                    <!-- End of Modal Content -->
+                    <!-- End of Modal Content --
                     
-                    <!-- Modal Footer -->
+                    <!-- Modal Footer --
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
-                    <!-- End of Modal Footer -->
+                    <!-- End of Modal Footer --
                     
                     </div>
                   </div>
                 </div>
-                <!-- End of Las Vegas Athletic Club Fitness Center Modal -->
+                <!-- End of Las Vegas Athletic Club Fitness Center Modal --
               </div>
               
               
-              <!-- Kindred Health Column -->
+              <!-- Kindred Health Column --
               <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="inner-wrapper">
                   <a ui-sref="#" data-toggle="modal" data-target="#kindredHealthCareLTACModal">
@@ -515,18 +318,18 @@
                   </a>
                 </div>
                 
-                <!-- Kindred HealthCare - Long Term Acute Care Hospital Modal -->
+                <!-- Kindred HealthCare - Long Term Acute Care Hospital Modal --
                 <div id="kindredHealthCareLTACModal" class="modal fade" role="dialog">
                   <div class="modal-dialog">
                   
-                    <!-- Modal content-->
+                    <!-- Modal content--
                     <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                       <h4 class="modal-title">Kindred HealthCare - Long Term Acute Care Hospital</h4>
                     </div>
                     <div class="modal-body" style="text-align: center;">
-                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>--
                       <h4>To learn more about working at the Kindred HealthCare - Long Term Acute Care Hospital fill out the form below with your contact information, cover letter, and attached resume</h4>
                       
                       <form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
@@ -555,22 +358,22 @@
                         <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                       </form>
                     </div>
-                    <!-- End of Modal Content -->
+                    <!-- End of Modal Content --
                     
-                    <!-- Modal Footer -->
+                    <!-- Modal Footer --
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
-                    <!-- End of Modal Footer -->
+                    <!-- End of Modal Footer --
                     
                     </div>
                   </div>
                 </div>
-                <!-- End of Kindred HealthCare - Long Term Acute Care Hospital Modal -->
+                <!-- End of Kindred HealthCare - Long Term Acute Care Hospital Modal --
               </div>
 
             
-              <!-- Assisted Living Column -->
+              <!-- Assisted Living Column --
               <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="inner-wrapper">
                   <a ui-sref="#" data-toggle="modal" data-target="#wolffApartmentCommunitiesModal">
@@ -579,18 +382,18 @@
                   </a>
                 </div>
                 
-                <!-- Wolff Apartment Communities Modal -->
+                <!-- Wolff Apartment Communities Modal --
                 <div id="wolffApartmentCommunitiesModal" class="modal fade" role="dialog">
                   <div class="modal-dialog">
                   
-                    <!-- Modal content-->
+                    <!-- Modal content--
                     <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                       <h4 class="modal-title">Wolff Apartment Communities</h4>
                     </div>
                     <div class="modal-body" style="text-align: center;">
-                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>--
                       <h4>To learn more about working at the Wolff Apartment Communities fill out the form below with your contact information, cover letter, and attached resume</h4>
                       
                       <form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
@@ -619,21 +422,21 @@
                         <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                       </form>
                     </div>
-                    <!-- End of Modal Content -->
+                    <!-- End of Modal Content --
                     
-                    <!-- Modal Footer -->
+                    <!-- Modal Footer --
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
-                    <!-- End of Modal Footer -->
+                    <!-- End of Modal Footer --
                     
                     </div>
                   </div>
                 </div>
-                <!-- End of Wolff Apartment Communities Modal -->
+                <!-- End of Wolff Apartment Communities Modal --
               </div>
               
-              <!-- Franklin Park Senior Living Column -->
+              <!-- Franklin Park Senior Living Column --
               <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="inner-wrapper">
                   <a ui-sref="#" data-toggle="modal" data-target="#franklinParkSeniorLivingModal">
@@ -642,18 +445,18 @@
                   </a>
                 </div>
                 
-                <!-- Franklin Park Senior Living Modal -->
+                <!-- Franklin Park Senior Living Modal --
                 <div id="franklinParkSeniorLivingModal" class="modal fade" role="dialog">
                   <div class="modal-dialog">
                   
-                    <!-- Modal content-->
+                    <!-- Modal content--
                     <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                       <h4 class="modal-title">Franklin Park Senior Living</h4>
                     </div>
                     <div class="modal-body" style="text-align: center;">
-                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>--
                       <h4>To learn more about working at the Franklin Park Senior Living fill out the form below with your contact information, cover letter, and attached resume</h4>
                       
                       <form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
@@ -682,22 +485,22 @@
                         <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                       </form>
                     </div>
-                    <!-- End of Modal Content -->
+                    <!-- End of Modal Content --
                     
-                    <!-- Modal Footer -->
+                    <!-- Modal Footer --
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
-                    <!-- End of Modal Footer -->
+                    <!-- End of Modal Footer --
                     
                     </div>
                   </div>
                 </div>
-                <!-- End of Franklin Park Senior Living Modal -->
+                <!-- End of Franklin Park Senior Living Modal --
               </div>
               
               
-              <!-- Power Aging Center - All Things Wellness Column -->
+              <!-- Power Aging Center - All Things Wellness Column --
               <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="inner-wrapper">
                   <a ui-sref="#" data-toggle="modal" data-target="#powerAgingCenterModal">
@@ -706,18 +509,18 @@
                   </a>
                 </div>
                 
-                <!-- Franklin Park Senior Living Modal -->
+                <!-- Franklin Park Senior Living Modal --
                 <div id="powerAgingCenterModal" class="modal fade" role="dialog">
                   <div class="modal-dialog">
                   
-                    <!-- Modal content-->
+                    <!-- Modal content--
                     <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                       <h4 class="modal-title">Power Aging Center - All Things Wellness</h4>
                     </div>
                     <div class="modal-body" style="text-align: center;">
-                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>-->
+                      <!--<h4>To learn more about the Valley Health Systems Henderson Hospital click <a ng-href="mailto:hr@hendersonhospital.com?subject=Inquiring%20About%20A%20Job%20Opening&body=Name:%0D%0DJob%20I'm%20Inquiring%20About:%0D%0DYears%20of%20Experience:%0D%0DHours%20Available%20Per%20Week:%0D%0DExpected%20Compensation:%0D%0D%0D%0DCover%20Letter:%0D%0D">HERE</a> or email work@unionvillage.net</h4>--
                       <h4>To learn more about working at the Power Aging Center fill out the form below with your contact information, cover letter, and attached resume</h4>
                       
                       <form action="php/work_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
@@ -746,39 +549,39 @@
                         <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                       </form>
                     </div>
-                    <!-- End of Modal Content -->
+                    <!-- End of Modal Content --
                     
-                    <!-- Modal Footer -->
+                    <!-- Modal Footer --
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
-                    <!-- End of Modal Footer -->
+                    <!-- End of Modal Footer --
                     
                     </div>
                   </div>
                 </div>
-                <!-- End of Franklin Park Senior Living Modal -->
+                <!-- End of Franklin Park Senior Living Modal --
                 
               </div>
             
             </div>
-            <!-- End of Row -->
+            <!-- End of Row --
 
             
           </div>
-          <!-- End of Main Body Contents -->
+          <!-- End of Main Body Contents --
 				</div>
-				<!-- End of Tab Selection 2 -->
+				<!-- End of Tab Selection 2 --
 				
 				
 
 
 
 				
-				<!-- Tab Selection 3 -->
+				<!-- Tab Selection 3 --
 				<div class="tab-pane" id="additionalSelection3" style="padding-top: 0px;">
 	
-  				<!-- Beginning of Main Body Contents -->
+  				<!-- Beginning of Main Body Contents --
           <div class="play-page-wrapper" style="height: 100vh; width: 100%; padding-top: 0px;">
             
             <div class="row top-row" style="padding-top: 0px; margin-top: 0px;">
@@ -786,7 +589,7 @@
             </div>
             
             <div class="row top-row" style="margin-top: -25px;">
-              <!-- LVAC Fitness Center Column -->
+              <!-- LVAC Fitness Center Column --
               <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="inner-wrapper">
                   <a ui-sref="#" data-toggle="modal" data-target="#lvacFitnessCenterModal">
@@ -796,11 +599,11 @@
                 </div>
               </div>
               
-              <!-- LVAC Fitness Center Modal -->
+              <!-- LVAC Fitness Center Modal --
               <div id="lvacFitnessCenterModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
               
-                  <!-- Modal content-->
+                  <!-- Modal content--
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -813,33 +616,33 @@
                     </div>
                     <!-- End of Modal Content -->
                     
-                    <!-- Modal Footer -->
+                    <!-- Modal Footer --
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
-                    <!-- End of Modal Footer -->
+                    <!-- End of Modal Footer --
                     
                   </div>
                 </div>
               </div>
-              <!-- End of LVAC Fitness Center Modal -->
+              <!-- End of LVAC Fitness Center Modal --
         
             </div>
-            <!-- End of LVAC Fitness Center Column and Row -->
+            <!-- End of LVAC Fitness Center Column and Row --
 
             
           </div>
-          <!-- End of Main Body Contents -->
+          <!-- End of Main Body Contents --
 
 
 				</div>
-				<!-- End of Tab Selection 3 -->
+				<!-- End of Tab Selection 3 --
 
 
 				
 			</div>
-			<!-- end of top tab bar -->
+			<!-- end of top tab bar --
 		
-		</div>		
+		</div>
 	</div>
 </div>

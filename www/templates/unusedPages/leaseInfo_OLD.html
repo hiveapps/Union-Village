@@ -1,0 +1,661 @@
+<body ng-app="unionVillage">
+  
+    <div class="li-main-wrapper" style="height: 100vh; width: 100%;">
+      
+      <!-- Independent Senior Living and Assisted Living Row -->
+      <div class="row" style="height: 100%;">
+        
+        <div class="col-xs-12">
+            <h4 style="margin-left: 2%;">Click on an image to learn more!</h4>  
+        </div>
+        
+        <!-- Independent Senior Living Column -->
+        <div class="col-xs-12 col-sm-6 col-lg-4" style="height: 50%;">
+          <div class="inner-wrapper">
+            <a ui-sref="#" data-toggle="modal" data-target="#seniorLivingModal">
+              <img src="img/wellApartmentsOutside.jpg" alt="The Well Apartments at Union Village"/>
+              <div id="overlay_text"><span style="margin-left: 5px;">The Well Apartments</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Independent Senior Living Modal -->
+        <div id="seniorLivingModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">The Well</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-xs-12" style="text-align: center;">
+                    <p>One of the finest Apartment Home Communities in Vegas will soon be underway at Union Village.</p>
+                  </div>
+                </div>
+                
+                <div class="row" style="font-size: 16px;">
+                  
+                  <!-- amenities row -->
+                  <div class="col-xs-12 col-md-6">
+                    <p style="margin-top: 10px;">Community amenities include:</p>
+                    <br>
+                    <ul>
+                        <li>Clubhouse with a Fireplace & Big-Screen TVs</li>
+                        <li>Entertainment Kitchen with a Community Dining Space</li>
+                        <li>Game Room with Billiards</li>
+                        <li>Complimentary Beer & Wine on Tap</li>
+                        <li>Coffee Bar with TopBrewer App-Powered Espresso Machine</li>
+                        <li>Conference Room</li>
+                        <li>24-Hour Fitness Center</li>
+                        <li>Unique Curved Pool with Spa Deck & Fire Feature</li>
+                        <li>Outdoor Lounge with BBQ Grills</li>
+                        <li>Sport Court & Playground</li>
+                        <li>24/7 On-Demand Parcel Lockers</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-xs-12 col-md-6">
+                    <p style="margin-top: 10px;">Apartment amenities include:</p>
+                    <br>
+                    <ul>
+                        <li>Choice of Two Stylish Interior Packages</li>
+                        <li>Wood-Style Plank Flooring</li>
+                        <li>Quartz Countertops</li>
+                        <li>Modern, Flat-Panel Cabinets</li>
+                        <li>Tile Kitchen Backsplashes</li>
+                        <li>GE Stainless Steel Appliances</li>
+                        <li>Washers & Dryers</li>
+                        <li>Walk-In Closets*</li>
+                        <li>Private Patios & Balconies*</li>
+                    </ul>
+                  </div>
+
+                </div>
+                <!-- end of amenities row -->
+
+                <!--<p style="font-size: 18px; margin-top: 5%;">For more information, or to be put on the waiting list, please click <a ng-href="mailto:leasing@unionvillage.net?subject=Inquiring%20About%20Leasing%20At%20Union%20Village&body=Name:%0D%0DContact%20Info:%0D%0DSpace%20I'm%20Inquiring%20About:%0D%0D">here</a> or email leasing@unionvillage.net</p>-->
+                <!--<span style="text-align: center;"><h3>For more information on leasing Apartment Homes at Union Village fill out the contact form below</h3></span>-->
+                
+
+                <!-- fourth row -->
+                <div class="row" style="height: 80%;">
+                  <div class="col-xs-12" style="height: 100%; padding: 5%;">
+                      
+                    <div class="inner contact">
+                      
+                      <h1 style="color: #2d98c4; margin-bottom: 3%;">Interested in leasing?</h1>
+                      <!-- Form Area -->
+                      
+                      <div class="contact-form">
+                        <!-- Form -->
+                        <form id="contact-us" action="php/leasing_form_email.php" method="post" enctype="multipart/form-data">
+                          <!-- Left Inputs -->
+                          <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- First Name -->
+                            <input type="text" class="form" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="color: #000;" required/>
+                                  
+                            <!-- Last Name -->
+                            <input type="text" class="form" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="color: #000;" required/>
+
+                            <!-- Email -->
+                            <input type="text" class="form" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="color: #000;" required/>
+
+                          </div><!-- End Left Inputs -->
+
+                          <!-- Right Inputs -->
+                          <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <textarea class="form textarea" placeholder="Message" ng-model="message" name="message" rows="5" id="message" style="resize: none;" required></textarea>
+                          </div>
+                          <!-- End Right Inputs -->
+
+                          <!-- Bottom Submit -->
+                          <div class="relative fullwidth col-xs-12">
+                            
+                            <!-- Facility Type -->
+                            <select class="form-control" id="facility" name="facility" style="width: 75%; margin: -10px auto;" required>
+                              <option value="The Well Apartments" selected>The Well Apartments</option>
+                            </select>
+
+                            <!-- Send Button -->
+                            <input class="form-btn semibold" type="submit" name="submit" value="Submit" style="margin-top: 25px;">
+
+                          </div>
+                          <!-- End Bottom Submit -->
+                        
+
+                        </form>
+
+                        <!-- Your Mail Message -->
+                        <div class="mail-message-area">
+                          <!-- Message -->
+                          <div class="alert gray-bg mail-message not-visible-message">
+                            <strong>Thank You !</strong> Your email has been delivered.
+                          </div>
+                        </div>
+
+                      </div><!-- End Contact Form Area -->
+
+                    </div><!-- End Inner -->
+
+                  </div>
+                  <!-- end of column -->
+
+                </div>
+                <!-- end of row -->
+              </div>
+              <!-- End of Modal Body -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Independent Senior Living Modal -->
+        
+        
+        
+        <!-- Assisted Living Column -->
+        <div class="col-xs-12 col-sm-6 col-lg-4" style="height: 50%;">
+            <div class="inner-wrapper" style="height: 100%; width: 100%;">
+                <a ui-sref="#" data-toggle="modal" data-target="#assistedLivingModal">
+                    <img src="img/franklin park hp.jpg" alt="Emerald Village at Union Village" style="width: 100%; height: 100%;" />-->
+                    <div id="overlay_text"><span style="margin-left: 5px;">Emerald Village</span></div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Assisted Living Modal -->
+        <div id="assistedLivingModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Emerald Village</h4>
+              </div>
+              <div class="modal-body">
+                <p>Union Village’s golden-age residents who require some measure of daily support or specialized health care are known as Emerald Villagers.  For these residents, Emerald Village homes are provided, offering beautiful floorplans, comfortable, familiar décor in private bedrooms, and kitchens, living, and family rooms shared with other Emerald Villagers.  These homes are designed to be well-suited to the lifestyle and progressive needs of home-based care that would traditionally be provided in “institutional” environments such as skilled nursing, long-term acute, and Alzheimer/memory care facilities.  Emerald Villagers can also enjoy exclusive access to the many amenities within Emerald Village, accompanied by family, friends, and as needed, their resident caregivers.</p>
+                
+                <!--<p style="font-size: 18px; margin-top: 5%;">For more information, or to be put on the waiting list, please click <a ng-href="mailto:leasing@unionvillage.net?subject=Inquiring%20About%20Leasing%20At%20Union%20Village&body=Name:%0D%0DContact%20Info:%0D%0DSpace%20I'm%20Inquiring%20About:%0D%0D">here</a> or email leasing@unionvillage.net</p>-->
+                <!--<span style="text-align: center;"><h3>For more information on leasing Emerald Living Apartments at Union Village fill out the contact form below</h3></span>-->
+                
+                <!-- fourth row -->
+                <div class="row" style="height: 80%;">
+                  <div class="col-xs-12" style="height: 100%; padding: 5%;">
+                      
+                    <div class="inner contact">
+                      
+                      <h1 style="color: #2d98c4; margin-bottom: 3%;">Interested in leasing?</h1>
+                      <!-- Form Area -->
+                      
+                      <div class="contact-form">
+                        <!-- Form -->
+                        <form id="contact-us" action="php/leasing_form_email.php" method="post" enctype="multipart/form-data">
+                          <!-- Left Inputs -->
+                          <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- First Name -->
+                            <input type="text" class="form" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="color: #000;" required/>
+                                  
+                            <!-- Last Name -->
+                            <input type="text" class="form" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="color: #000;" required/>
+
+                            <!-- Email -->
+                            <input type="text" class="form" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="color: #000;" required/>
+
+                          </div><!-- End Left Inputs -->
+
+                          <!-- Right Inputs -->
+                          <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <textarea class="form textarea" placeholder="Message" ng-model="message" name="message" rows="5" id="message" style="resize: none;" required></textarea>
+                          </div>
+                          <!-- End Right Inputs -->
+
+                          <!-- Bottom Submit -->
+                          <div class="relative fullwidth col-xs-12">
+                            
+                            <!-- Facility Type -->
+                            <select class="form-control" id="facility" name="facility" style="width: 75%; margin: -10px auto;" required>
+                              <option value="Emerald Village" selected>Emerald Village</option>
+                            </select>
+
+                            <!-- Send Button -->
+                            <input class="form-btn semibold" type="submit" name="submit" value="Submit" style="margin-top: 25px;">
+
+                          </div>
+                          <!-- End Bottom Submit -->
+                        
+
+                        </form>
+
+                        <!-- Your Mail Message -->
+                        <div class="mail-message-area">
+                          <!-- Message -->
+                          <div class="alert gray-bg mail-message not-visible-message">
+                            <strong>Thank You !</strong> Your email has been delivered.
+                          </div>
+                        </div>
+
+                      </div><!-- End Contact Form Area -->
+
+                    </div><!-- End Inner -->
+
+                  </div>
+                  <!-- end of column -->
+  
+                </div>
+                <!-- end of row -->
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Center for Sports, Health & Healing -->
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="inner-wrapper">
+            <a ui-sref="#" data-toggle="modal" data-target="#townhomeApartmentsModal">
+              <img src="img/franklin park townhomes.png" alt="Wellness Mall at Union Village" />
+              <div id="overlay_text"><span style="margin-left: 5px;">Center for Sports, Health & Healing</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Center for Sports, Health & Healing Modal -->
+        <div id="townhomeApartmentsModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Center for Sports, Health & Healing</h4>
+              </div>
+              <div class="modal-body">  
+                <p>The Center for Sports, Health and Healing at Union Village can be enjoyed by Union Village residents, other members of the surrounding communities, and professional athletes seeking training and rehabilitation.  The Valley’s finest providers will offer myriad specialized services and integrative care at the Center’s “Power-Aging Wellness Center” for golden-age clientele, and at the “Training and Rehabilitation Center” for professional athletes.  All providers’ share the goal to provide for the benefit of healing and bringing the human condition into balance, and promoting a vital, quality lifestyle that preserves this balance.</p>
+                <br>
+                <p>Architecturally beautiful space at The Center for Sports, Health and Healing will be available for lease by the following provider occupants.  Other areas are designated for rent on a schedule that can be tailored to providers’ programs.</p>
+                <br>
+
+                <div class="row">
+                  
+                  <!-- Left Column -->
+                  <div class="col-sm-6 col-xs-12">
+                    
+                    <label>The Center</label>
+                    <ul style="margin: 0px; list-style: none;">
+                      <li><input type="checkbox" disabled> Nutrition Café</li>
+                      <li><input type="checkbox" disabled> Compounding / Retail Pharmacy</li>
+                      <li><input type="checkbox" disabled> Home Health</li>
+                      <li><input type="checkbox" disabled> Optometry</li>
+                      <li><input type="checkbox" disabled> Dental</li>
+                      <li><input type="checkbox" disabled> Outpatient Therapy</li>
+                      <li><input type="checkbox" disabled> Chiropractic</li>
+                      <li><input type="checkbox" disabled> Acupuncture / Acupressure</li>
+                      <li><input type="checkbox" disabled> Massage Therapy</li>
+                      <li><input type="checkbox" disabled> Yoga</li>
+                      <li><input type="checkbox" disabled> Herbal / Supplements / Vitamin Store</li>
+                      <li><input type="checkbox" disabled> Healthy-Food Demonstration Kitchen</li>
+                      <li><input type="checkbox" disabled> Mental Health</li>
+                      <li><input type="checkbox" disabled> Other Wellness Care Options</li>
+                    </ul>
+                    
+                    <br>
+                    
+                    <label>Training and Rehabilitation Center</label>
+                    <ul style="margin: 0px; list-style: none;">
+                      <li><input type="checkbox" disabled> Physical Therapy</li>
+                      <li><input type="checkbox" disabled> Healthy Infusion Therapy</li>
+                      <li><input type="checkbox" disabled> Nutrition / Supplement Therapy</li>
+                      <li><input type="checkbox" disabled> Turf Practice Area</li>
+                      <li><input type="checkbox" disabled> Locker Rooms</li>
+                      <li><input type="checkbox" disabled> Offices / Conference Rooms</li>
+                    </ul>
+                    
+                  </div>
+                  <!-- End of Left Column -->
+                  
+                  
+                  <!-- Right Column -->
+                  <div class="col-sm-6 col-xs-12">
+                    
+                    <label>Power-Aging Wellness Center</label>
+                    <ul style="margin: 0px; list-style: none;">
+                      <li><input type="checkbox" disabled> Fitness Center</li>
+                      <li><input type="checkbox" disabled> Lap Pool</li>
+                      <li><input type="checkbox" disabled> Exercise Pool</li>
+                      <li><input type="checkbox" disabled> Warm Water Therapy</li>
+                      <li><input type="checkbox" disabled> Full-Service Spa</li>
+                      <li><input type="checkbox" disabled> Power-Aging Wellness Coaches</li>
+                      <li><input type="checkbox" disabled> Locker Rooms</li>
+                      <li><input type="checkbox" disabled> Offices / Conference Rooms</li>
+                    </ul>
+                    
+                  </div>
+                  <!-- End of Right Column -->
+                  
+                </div>
+
+                <!-- fourth row -->
+                <div class="row" style="height: 80%;">
+                  <div class="col-xs-12" style="height: 100%; padding: 5%;">
+                      
+                    <div class="inner contact">
+                      
+                      <h1 style="color: #2d98c4; margin-bottom: 3%;">Interested in leasing?</h1>
+                      <!-- Form Area -->
+                      
+                      <div class="contact-form">
+                        <!-- Form -->
+                        <form id="contact-us" action="php/leasing_form_email.php" method="post" enctype="multipart/form-data">
+                          <!-- Left Inputs -->
+                          <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- First Name -->
+                            <input type="text" class="form" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="color: #000;" required/>
+                                  
+                            <!-- Last Name -->
+                            <input type="text" class="form" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="color: #000;" required/>
+
+                            <!-- Email -->
+                            <input type="text" class="form" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="color: #000;" required/>
+
+                          </div><!-- End Left Inputs -->
+
+                          <!-- Right Inputs -->
+                          <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <textarea class="form textarea" placeholder="Message" ng-model="message" name="message" rows="5" id="message" style="resize: none;" required></textarea>
+                          </div>
+                          <!-- End Right Inputs -->
+
+                          <!-- Bottom Submit -->
+                          <div class="relative fullwidth col-xs-12">
+                            
+                            <!-- Facility Type -->
+                            <select class="form-control" id="facility" name="facility" style="width: 75%; margin: -10px auto;" required>
+                              <option value="Center for Sports, Health & Healing" selected>Center for Sports, Health & Healing</option>
+                            </select>
+
+                            <!-- Send Button -->
+                            <input class="form-btn semibold" type="submit" name="submit" value="Submit" style="margin-top: 25px;">
+
+                          </div>
+                          <!-- End Bottom Submit -->
+                        
+
+                        </form>
+
+                        <!-- Your Mail Message -->
+                        <div class="mail-message-area">
+                          <!-- Message -->
+                          <div class="alert gray-bg mail-message not-visible-message">
+                            <strong>Thank You !</strong> Your email has been delivered.
+                          </div>
+                        </div>
+
+                      </div><!-- End Contact Form Area -->
+
+                    </div><!-- End Inner -->
+
+                  </div>
+                  <!-- end of column -->
+    
+                </div>
+                <!-- end of row -->
+
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Center for Sports, Health & Healing Modal -->
+        
+      </div>
+      <!-- End of Top Row -->
+      
+      
+      
+      <!-- Medical Office and Retail Row -->
+      <div class="row" style="margin-bottom: 5%;">
+        
+        <!-- Medical Office Column -->
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="inner-wrapper">
+            <a ui-sref="#" data-toggle="modal" data-target="#medicalOfficeModal">
+              <img src="img/uv wellness 10.png" alt="Medical Office Building at Union Village" />
+              <div id="overlay_text"><span style="margin-left: 5px;">Medical Office Building</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Medical Office Modal -->
+        <div id="medicalOfficeModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Medical Office Building</h4>
+              </div>
+              <div class="modal-body">
+                <p>The first of five medical office buildings is complete, providing an outpatient surgi-center and physicians’ offices.  The medical office buildings are owned and operated by Universal Health Services.</p>
+                
+                <!-- form row -->
+                <div class="row" style="height: 80%;">
+                  <div class="col-xs-12" style="height: 100%; padding: 5%;">
+                      
+                    <div class="inner contact">
+                      
+                      <h1 style="color: #2d98c4; margin-bottom: 3%;">Interested in leasing?</h1>
+                      <!-- Form Area -->
+                      
+                      <div class="contact-form">
+                        <!-- Form -->
+                        <form id="contact-us" action="php/leasing_form_email.php" method="post" enctype="multipart/form-data">
+                          <!-- Left Inputs -->
+                          <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- First Name -->
+                            <input type="text" class="form" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="color: #000;" required/>
+                                  
+                            <!-- Last Name -->
+                            <input type="text" class="form" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="color: #000;" required/>
+
+                            <!-- Email -->
+                            <input type="text" class="form" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="color: #000;" required/>
+
+                          </div><!-- End Left Inputs -->
+
+                          <!-- Right Inputs -->
+                          <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <textarea class="form textarea" placeholder="Message" ng-model="message" name="message" rows="5" id="message" style="resize: none;" required></textarea>
+                          </div>
+                          <!-- End Right Inputs -->
+
+                          <!-- Bottom Submit -->
+                          <div class="relative fullwidth col-xs-12">
+                            
+                            <!-- Facility Type -->
+                            <select class="form-control" id="facility" name="facility" style="width: 75%; margin: -10px auto;" required>
+                              <option value="Medical Office Building" selected>Medical Office Building</option>
+                            </select>
+
+                            <!-- Send Button -->
+                            <input class="form-btn semibold" type="submit" name="submit" value="Submit" style="margin-top: 25px;">
+
+                          </div>
+                          <!-- End Bottom Submit -->
+                        
+
+                        </form>
+
+                        <!-- Your Mail Message -->
+                        <div class="mail-message-area">
+                          <!-- Message -->
+                          <div class="alert gray-bg mail-message not-visible-message">
+                            <strong>Thank You !</strong> Your email has been delivered.
+                          </div>
+                        </div>
+
+                      </div><!-- End Contact Form Area -->
+
+                    </div><!-- End Inner -->
+
+                  </div>
+                  <!-- end of column -->
+    
+                </div>
+                <!-- end of row -->
+
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Medical Office Modal -->
+        
+        
+        
+        <!-- Retail Column -->
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="inner-wrapper">
+            <a ui-sref="#" data-toggle="modal" data-target="#unionPlaceModal">
+              <img src="img/retailpromenade2.png" alt="Retail Promenade at Union Village" />
+              <div id="overlay_text"><span style="margin-left: 5px;">Retail</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Retail Modal -->
+        <div id="unionPlaceModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Retail</h4>
+              </div>
+              <div class="modal-body">
+                <p>Along the Union Village Promenade, you will enjoy quality restaurants, an artisan coffee bar, a farmers’ market, and an array of other specialty retail establishments.</p>
+                
+                <!-- form row -->
+                <div class="row" style="height: 80%;">
+                  <div class="col-xs-12" style="height: 100%; padding: 5%;">
+                      
+                    <div class="inner contact">
+                      
+                      <h1 style="color: #2d98c4; margin-bottom: 3%;">Interested in leasing?</h1>
+                      <!-- Form Area -->
+                      
+                      <div class="contact-form">
+                        <!-- Form -->
+                        <form id="contact-us" action="php/leasing_form_email.php" method="post" enctype="multipart/form-data">
+                          <!-- Left Inputs -->
+                          <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- First Name -->
+                            <input type="text" class="form" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="color: #000;" required />
+                                  
+                            <!-- Last Name -->
+                            <input type="text" class="form" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="color: #000;" required />
+
+                            <!-- Email -->
+                            <input type="text" class="form" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="color: #000;" required />
+
+                          </div><!-- End Left Inputs -->
+
+                          <!-- Right Inputs -->
+                          <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <textarea class="form textarea" placeholder="Message" ng-model="message" name="message" rows="5" id="message" style="resize: none;" required></textarea>
+                          </div>
+                          <!-- End Right Inputs -->
+
+                          <!-- Bottom Submit -->
+                          <div class="relative fullwidth col-xs-12">
+                            
+                            <!-- Facility Type -->
+                            <select class="form-control" id="facility" name="facility" style="width: 75%; margin: -10px auto;" required>
+                              <option value="Retail" selected>Retail</option>
+                            </select>
+
+                            <!-- Send Button -->
+                            <input class="form-btn semibold" type="submit" name="submit" value="Submit" style="margin-top: 25px;">
+
+                          </div>
+                          <!-- End Bottom Submit -->
+                        
+
+                        </form>
+
+                        <!-- Your Mail Message -->
+                        <div class="mail-message-area">
+                          <!-- Message -->
+                          <div class="alert gray-bg mail-message not-visible-message">
+                            <strong>Thank You !</strong> Your email has been delivered.
+                          </div>
+                        </div>
+
+                      </div><!-- End Contact Form Area -->
+
+                    </div><!-- End Inner -->
+
+                  </div>
+                  <!-- end of column -->
+    
+                </div>
+                <!-- end of row -->
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Retail Modal -->
+        
+        
+      </div>
+      <!-- End of Row -->
+      
+    </div>
+    <!-- End of Body Contents -->
+  
+</body>

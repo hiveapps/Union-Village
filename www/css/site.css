@@ -2,9 +2,6 @@
 html {
   height: 100%;
 }
-.devBorder{
-    border: 1px solid black;
-}
 .halfHeight {
     height: 50%;
 }
@@ -350,7 +347,7 @@ section.loc-page-wrapper .row .col-lg-8 {
     border-right: 1px solid #aaa;
     border-top: 1px solid #aaa;
     height: 100%;
-    padding: 0px;
+    padding-bottom: 5px;
 }
 
 /* card w/ right img & left text */

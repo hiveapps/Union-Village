@@ -1,0 +1,4 @@
+[07-May-2016 08:55:10 UTC] PHP Fatal error:  Call to a member function IsSMTP() on a non-object in /home/julaig/public_html/php/live_form_email.php on line 3
+[07-May-2016 09:01:00 UTC] PHP Fatal error:  Call to a member function IsSMTP() on a non-object in /home/julaig/public_html/php/live_form_email.php on line 3
+[07-May-2016 09:08:15 UTC] PHP Fatal error:  Class 'PHPMailer' not found in /home/julaig/public_html/php/live_form_email.php on line 3
+[07-May-2016 09:10:08 UTC] PHP Fatal error:  Call to a member function IsSMTP() on a non-object in /home/julaig/public_html/php/live_form_email.php on line 4

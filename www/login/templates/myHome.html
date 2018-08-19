@@ -1,0 +1,97 @@
+<div class="pgWrapper li-main-wrapper" ng-controller="dashboardCtrl" style="height: 100vh; width: 100%;">
+	<div class="row" style="height: 100%; margin-top: 50px;">
+		
+		<div class="col-md-12" style="padding-top: 2%;">
+          	
+			<!-- Top Tab Bar -->
+			<ul class="nav nav-tabs">
+				<li class="active" style="margin-left: 3%;"><a data-target="#additionalSelection" data-toggle="tab">Service Requests</a></li>
+				<li><a data-target="#additionalSelection2" data-toggle="tab">Leasing Info</a></li>
+				<li><a data-target="#additionalSelection3" data-toggle="tab">Devices</a></li>
+			</ul>
+			<div class="tab-content">
+				
+				<div class="tab-pane active" id="additionalSelection" style="padding-top: 2%; padding-left: 3%;">
+					<form action="php/service_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
+                    
+						<label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
+						<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
+						
+						<label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
+						<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
+						
+						<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Address</label>
+						<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+						
+						<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
+						<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+						
+						<label for="message" style="margin-top: 0px;">Brief Message:</label>
+						<textarea class="form-control" ng-model="message" name="message" rows="3" id="message" style="width: 75%; resize: none;"></textarea><br>
+						
+						
+						<!--<label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
+						<select class="form-control" id="facility" name="facility" style="width: 75%;" required>
+						<option value="Apartment Homes" selected>Apartment Homes</option>
+						</select>-->
+						
+						<br>
+						
+						<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+					</form>
+				</div>
+				
+				<div class="tab-pane" id="additionalSelection2" style="padding-top: 2%; padding-left: 3%;">
+					<h1>More Info Coming Soon</h1>
+				</div>
+				
+				<div class="tab-pane" id="additionalSelection3" style="padding-top: 2%; padding-left: 3%;">
+					<h2>Click on an item to learn more</h2>
+					<!-- Independent Senior Living Column -->
+					<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="inner-wrapper">
+						<a ui-sref="#" data-toggle="modal" data-target="#seniorLivingModal">
+							<img src="img/samsung_smartTV.jpg" alt="Las Vegas Athletic Club at Union Village"/>
+							<div id="overlay_text"><span style="margin-left: 5px;">42" Samsung Smart TV</span></div>
+						</a>
+						</div>
+					</div>
+					
+					<!-- Independent Senior Living Modal -->
+					<div id="seniorLivingModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+					
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">42" Samsung Smart TV</h4>
+								</div>
+								<div class="modal-body" style="text-align: center;">
+					
+									<h2>Samsung Smart TV</h2>
+									
+									<p>The Samsung Smart TV comes standard for every Union Village resident. This powerful TV enables you to access all of your favorite streaming services...</p>
+								</div>
+								<!-- End of Modal Content -->
+								
+								<!-- Modal Footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								<!-- End of Modal Footer -->
+								
+							</div>
+						</div>
+					</div>
+					<!-- End of Independent Senior Living Modal -->
+				</div>
+
+
+			</div>
+			<!-- end of top tab bar -->
+		
+		</div>
+
+	</div>
+</div>
